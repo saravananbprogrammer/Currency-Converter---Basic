@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&family=Orbitron:wght@400;700&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 40%, #6dd5ed 100%);
+    color: #ffffff;
+}
+
+header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 40%, #6dd5ed 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    flex-shrink: 0;
+}
+
+header .logo-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 36px;
+    margin: 0;
+    color: #ffffff;
+}
+
+header .slogan {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    opacity: 0.8;
+    color: #b0c4de;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header .about-button {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+header .about-button:hover {
+    background: rgba(0, 114, 255, 0.8);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-logo-container {
+    margin: 20px 0;
+}
+
+.main-logo {
+    height: 100px;
+    transition: transform 0.6s, filter 0.6s;
+    will-change: transform;
+}
+
+.main-logo:hover {
+    transform: rotateY(360deg) scale(1.1);
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+@keyframes twist {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+}
+
+#search-container {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+#search-input {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.804);
+    color: #201f1f;
+    transition: border-bottom-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#search-input:focus {
+    border-bottom-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 10px rgba(0, 114, 255, 0.8);
+    color: #faf8f8;
+}
+
+#search-button {
+    padding: 10px 20px;
+    border: none;
+    background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+    background-color: rgba(0, 114, 255, 0.8);
+}
+
+#refresh-button {
+    padding: 10px 20px;
+    border: none;
+    background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+#refresh-button:hover {
+    background-color: rgba(234, 238, 243, 0.92);
+}
+
+#results-container {
+    width: 100%;
+    max-width: 800px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+    text-align: left;
+    margin-top: 20px;
+}
+
+#results-container .article {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+#results-container .article h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#results-container .article p {
+    margin-bottom: 5px;
+}
+
+footer {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 40%, #6dd5ed 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    flex-shrink: 0;
+}
+
+/* Flash effect on mouse move */
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+    background: radial-gradient(circle, rgba(255,255,255,0.8), transparent 40%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    will-change: transform;
+    transition: transform 0.1s ease-out;
+    mix-blend-mode: difference;
+}
+
+body.add-flash-effect::after {
+    transform: translate(var(--mouse-x), var(--mouse-y));
+}
