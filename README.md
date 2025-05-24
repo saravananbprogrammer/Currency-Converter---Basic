@@ -1,2 +1,17 @@
-# my-projects
-This repository, created by Saravanan B, contains a collection of my personal projects, including web applications, coding challenges, and various technical demos. It covers full-stack development, backend programming, and problem-solving. All projects are open-source and available for learning and collaboration.
+# 💱 Currency Converter - Basic
+
+This is a basic currency converter app developed by **Saravanan B.** using Flutter and Dart.  
+The app allows users to convert amounts between selected currencies with a minimal and user-friendly interface.
+
+## 🧩 Features
+
+- Simple and clean UI
+- Dropdown menu for selecting currencies
+- Real-time or static conversion logic (depending on implementation)
+- Flutter and Dart-based mobile development
+
+## 🚀 Tech Stack
+
+- Flutter
+- Dart
+
