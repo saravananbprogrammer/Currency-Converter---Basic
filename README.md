@@ -6,7 +6,6 @@ The app allows users to convert amounts between selected currencies with a minim
 ## 🧩 Features
 
 - Simple and clean UI
-- Dropdown menu for selecting currencies
 - Real-time or static conversion logic (depending on implementation)
 - Flutter and Dart-based mobile development
 
